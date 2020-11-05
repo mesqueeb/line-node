@@ -80,11 +80,10 @@ export async function issueAccessToken(
    * Content-Type: application/x-www-form-urlencoded
    */
   const form = { grant_type, code, redirect_uri, client_id, client_secret }
-  const {
-    body,
-  }: {
-    body: { data: IssueAccessTokenResponse }
-  } = await post('https://api.line.me/oauth2/v2.1/token', { form, responseType: 'json' })
-  const response: IssueAccessTokenResponse = body.data
-  return response
+  const response = await post<IssueAccessTokenResponse>('https://api.line.me/oauth2/v2.1/token', {
+    form,
+    responseType: 'json',
+  })
+  const { body } = response
+  return body
 }

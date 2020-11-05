@@ -2,10 +2,13 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+var got = require('got');
+var jwt = require('jsonwebtoken');
 
-var got = _interopDefault(require('got'));
-var jwt = _interopDefault(require('jsonwebtoken'));
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var got__default = /*#__PURE__*/_interopDefaultLegacy(got);
+var jwt__default = /*#__PURE__*/_interopDefaultLegacy(jwt);
 
 /**
  * Generates a non-safe random string which can have duplicates around 7 million generations.
@@ -78,7 +81,7 @@ function __awaiter(thisArg, _arguments, P, generator) {
     });
 }
 
-const post = got.post;
+const post = got__default['default'].post;
 /**
  * (Node only) Makes a POST request to retrieve an access token from LINE. This uses GOT as a dependency to make the request.
  * Can throw errors.
@@ -100,13 +103,16 @@ function issueAccessToken(params) {
          * Content-Type: application/x-www-form-urlencoded
          */
         const form = { grant_type, code, redirect_uri, client_id, client_secret };
-        const { body, } = yield post('https://api.line.me/oauth2/v2.1/token', { form, responseType: 'json' });
-        const response = body.data;
-        return response;
+        const response = yield post('https://api.line.me/oauth2/v2.1/token', {
+            form,
+            responseType: 'json',
+        });
+        const { body } = response;
+        return body;
     });
 }
 
-const { decode } = jwt;
+const { decode } = jwt__default['default'];
 /**
  * (Node only) Returns a decoded LINE id token. Uses the nodeJS 'jsonwebtoken' dependency.
  * This id Token should be validated!

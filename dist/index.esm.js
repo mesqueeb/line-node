@@ -94,9 +94,12 @@ function issueAccessToken(params) {
          * Content-Type: application/x-www-form-urlencoded
          */
         const form = { grant_type, code, redirect_uri, client_id, client_secret };
-        const { body, } = yield post('https://api.line.me/oauth2/v2.1/token', { form, responseType: 'json' });
-        const response = body.data;
-        return response;
+        const response = yield post('https://api.line.me/oauth2/v2.1/token', {
+            form,
+            responseType: 'json',
+        });
+        const { body } = response;
+        return body;
     });
 }
 
