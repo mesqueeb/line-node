@@ -1,7 +1,6 @@
 {
   "name": "line-node",
   "sideEffects": false,
-  "type": "module",
   "version": "0.0.4",
   "description": "LINE SDK for TypeScript",
   "module": "./dist/index.es.js",
@@ -17,10 +16,6 @@
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": ">=12.13",
-    "npm": ">=7"
-  },
   "scripts": {
     "test": "echo na",
     "lint": "tsc --noEmit && eslint ./src --ext .ts",
