@@ -22,7 +22,7 @@
     "npm": ">=7"
   },
   "scripts": {
-    "test": "vitest run",
+    "test": "echo na",
     "lint": "tsc --noEmit && eslint ./src --ext .ts",
     "build": "rollup -c ./scripts/build.js",
     "release": "npm run lint && del dist && npm run build && np"
@@ -65,8 +65,7 @@
   },
   "np": {
     "yarn": false,
-    "branch": "production",
-    "tests": false
+    "branch": "production"
   },
   "eslintConfig": {
     "ignorePatterns": [
