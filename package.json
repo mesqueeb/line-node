@@ -2,7 +2,7 @@
   "name": "line-node",
   "sideEffects": false,
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "LINE SDK for TypeScript",
   "module": "./dist/index.es.js",
   "main": "./dist/index.cjs",
