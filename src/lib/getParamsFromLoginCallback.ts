@@ -43,7 +43,7 @@ export function getParamsFromLoginCallback(
   callbackUrlTriggered: string,
 ): LoginCallbackParamsSuccess | LoginCallbackParamsError {
   const query = callbackUrlTriggered.split('?')[1]
-  const queryEntries = query.split('&').map((q) => q.split('='))
+  const queryEntries = query?.split('&').map((q) => q.split('=')) ?? []
   const queryObject = Object.fromEntries(queryEntries)
   return queryObject
 }

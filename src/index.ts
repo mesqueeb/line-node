@@ -1,2 +1,2 @@
-export * from './lib/index'
-export * from './libNode/index'
+export * from './lib/index.js'
+export * from './libNode/index.js'

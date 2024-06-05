@@ -1,2 +1,2 @@
-export * from './issueAccessToken'
-export * from './decodeIdToken'
+export * from './decodeIdToken.js'
+export * from './issueAccessToken.js'

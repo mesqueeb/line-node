@@ -1,4 +1,4 @@
-import { randomString } from '../helpers/randomString'
+import { randomString } from '../helpers/randomString.js'
 
 /**
  * https://developers.line.biz/en/docs/line-login/integrate-line-login/#making-an-authorization-request
