@@ -17,11 +17,11 @@
     "release": "pnpm run lint && pnpm run build && np"
   },
   "dependencies": {
-    "got": "^14.6.6",
+    "got": "^16.0.0",
     "jsonwebtoken": "^9.0.3"
   },
   "devDependencies": {
-    "@cycraft/eslint": "^0.4.4",
+    "@cycraft/eslint": "^0.4.6",
     "@cycraft/tsconfig": "^0.1.2",
     "@types/jsonwebtoken": "^9.0.10",
     "del-cli": "^7.0.0",
@@ -46,5 +46,5 @@
   },
   "homepage": "https://github.com/mesqueeb/line-node#readme",
   "bugs": "https://github.com/mesqueeb/line-node/issues",
-  "packageManager": "pnpm@11.27.0"
+  "packageManager": "pnpm@12.4.2"
 }
