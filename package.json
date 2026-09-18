@@ -21,7 +21,7 @@
     "jsonwebtoken": "^9.0.3"
   },
   "devDependencies": {
-    "@cycraft/eslint": "^0.4.6",
+    "@cycraft/eslint": "^0.4.7",
     "@cycraft/tsconfig": "^0.1.2",
     "@types/jsonwebtoken": "^9.0.10",
     "del-cli": "^7.0.0",

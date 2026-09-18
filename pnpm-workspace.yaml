@@ -1,5 +1,5 @@
 minimumReleaseAgeExclude:
-  - '@cycraft/eslint@0.4.6'
+  - '@cycraft/eslint@0.4.6 || 0.4.7'
   - prettier@3.9.7
 overrides:
   '@eslint/plugin-kit@<0.3.4': ^0.3.4
