@@ -1,6 +1,4 @@
-/**
- * Generates a non-safe random string which can have duplicates around 7 million generations.
- */
+/** Generates a non-safe random string which can have duplicates around 7 million generations. */
 export function randomString(length = 20) {
     return Array(length)
         .fill(0)
