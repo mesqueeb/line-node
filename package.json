@@ -1,6 +1,6 @@
 {
   "name": "line-node",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "LINE SDK for TypeScript",
   "type": "module",
   "sideEffects": false,
